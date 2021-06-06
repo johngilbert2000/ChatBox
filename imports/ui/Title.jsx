@@ -5,7 +5,7 @@ import { Meteor } from "meteor/meteor";
 // Third-party imports
 import { motion } from "framer-motion";
 
-const Title = ({ user, useSignUp, setUseSignUp, setLoggedIn }) => {
+const Title = ({ user, useSignUp, setUseSignUp }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // get window width
@@ -22,7 +22,6 @@ const Title = ({ user, useSignUp, setUseSignUp, setLoggedIn }) => {
 
   const logout = () => {
     Meteor.logout();
-    setLoggedIn(false);
   };
 
   // framer-motion movements

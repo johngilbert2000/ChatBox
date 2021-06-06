@@ -7,7 +7,7 @@ import Msg from "./Msg";
 
 // Lists messages to be shown in conversation menu (MsgMenu)
 // Also contains button for scrolling to bottom of conversation
-const MsgList = ({ user, msgs, loggedIn }) => {
+const MsgList = ({ user, msgs }) => {
   const scrollRef = useRef(null);
 
   // scrolls to bottom of messages
@@ -40,7 +40,6 @@ const MsgList = ({ user, msgs, loggedIn }) => {
                 msg={msg}
                 select={select}
                 remove={remove}
-                loggedIn={loggedIn}
               />
             ))}
           </Fade>

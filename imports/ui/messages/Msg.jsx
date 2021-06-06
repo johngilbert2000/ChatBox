@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Component for individual message in MsgList
-const Msg = ({ user, msg, select, remove, loggedIn }) => {
+const Msg = ({ user, msg, select, remove }) => {
   const [nameHover, setNameHover] = useState(false);
 
   const styles = {

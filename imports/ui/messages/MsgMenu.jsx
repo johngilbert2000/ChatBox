@@ -5,10 +5,10 @@ import MsgList from "./MsgList";
 // Contains conversation messages,
 // a scroll down button,
 // and a place to input new messages
-const MsgMenu = ({ user, msgs, loggedIn }) => {
+const MsgMenu = ({ user, msgs }) => {
   return (
     <>
-      <MsgList user={user} msgs={msgs} loggedIn={loggedIn} />
+      <MsgList user={user} msgs={msgs} />
       <MsgInput user={user} />
     </>
   );

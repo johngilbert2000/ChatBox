@@ -1,0 +1,239 @@
+body {
+  font-family: sans-serif;
+  background-color: #333;
+  color: #efefef;
+  overflow: hidden;
+  margin: none;
+  padding: none;
+  width: 100%;
+
+  /* background-image: linear-gradient(to bottom, #315481, #918e82 100%); */
+  background-image: linear-gradient(to bottom, #333, #315481, #333 100%);
+}
+
+* {
+  font-family: 'Poppins', 'Mitr', sans-serif;
+  margin: none;
+  padding: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu-parent {
+  height: 80vh;
+  margin: none;
+  padding-top: 4rem;
+}
+
+.menu {
+  border: 1px solid #efefef5b;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  margin: 0rem 2rem;
+  margin-top: 2rem;
+  height: 65%;
+  overflow: auto;
+  overscroll-behavior: none;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 3px;
+  background-color: rgb(177, 150, 125);
+  border: 1px solid rgb(177, 150, 125);
+  transition: all 0.3s;
+  font-size: 0.8rem;
+}
+
+.btn:hover {
+  background-color: rgb(243, 209, 178);
+  cursor: pointer;
+  border: 1px solid #efefef;
+}
+
+.input-text {
+  background-color:rgb(65, 65, 65);
+  color: #f7f7f7;
+  border-radius: 0.2rem;
+  width: 85%;
+  transition: all 1s;
+  padding-left: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-text:hover {
+  background-color:rgb(88, 88, 88);
+  color: rgb(243, 243, 243);
+}
+
+.input-text:focus {
+  color:#444;
+  background-color: #d4d4d4;
+  border-radius: 0.2rem;
+  width: 90%;
+}
+
+.msg-form {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3rem;
+}
+
+.msg {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr 35px 5px;
+}
+
+.msg:hover {
+  background-color: rgba(68, 68, 68, 0.603);
+}
+
+.input-location {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin: 0px 0px;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 15px;
+  /* background-color: rgba(51, 51, 51, 0.527); */
+  background-color: #313438;
+  border-top: 1px solid #686868;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Limelight', cursive;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #efefef;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 1rem;
+  pointer-events: none;
+}
+
+.arrow {
+  padding: 10px;
+  border: 1px solid #efefef86;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: fixed;
+  right: 3rem;
+  bottom: 8rem; /* 5.4 */
+  background-color: rgb(51, 51, 51, 0.5);
+  color: #efefef86;
+}
+
+.arrow:hover{
+  background-color: rgb(51, 51, 51, 0.9);
+  box-shadow: 0px 0px 1px #e47113;
+}
+
+.arrow:active {
+  background-color: #686868;
+}
+
+.X {
+  color: #e47113;
+  padding: 0px 9px;
+  padding-top: 2px;
+  font-size: 26px;
+  border: 1px solid #e47113;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.X:hover{
+  background-color: #686868;
+  color: #ff9741;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+
+.login-form > label {
+  padding: 0.5rem;
+}
+
+.login-form > button {
+  margin-top: 1rem;
+}
+
+.login-form > input {
+  padding: 8px;
+  margin-bottom: 0.5rem;
+  border-radius: 5%;
+  background-color: #ffffff93;
+  transition: all 0.5s ease-in-out;
+  width: 180px;
+}
+
+.login-form > input:hover {
+  background-color: #efefefde;
+}
+
+.login-form > input:focus {
+  background-color: #efefef;
+  width: 190px;
+}
+
+/* login, logout, register */
+.menu-btn {
+  border-radius: 0.5rem;
+  padding: 8px 16px;
+  background-color: rgb(177, 150, 125);
+  border: 1px solid rgb(177, 150, 125);
+  transition: all 0.3s;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+/* login, logout, register */
+.menu-btn:hover {
+  background-color: rgb(243, 209, 178);
+  cursor: pointer;
+  border: 1px solid #efefef;
+}
+
+.btn-alt {
+  background-color: steelblue;
+  border: 1px solid steelblue;
+}
+
+.btn-alt:hover {
+  cursor: pointer;
+  background-color: rgb(98, 179, 245);
+  border: 1px solid #99d4fc;
+}
+
+.logout-pos {
+  /* width: 30%; */
+  float: right;
+  padding: 1rem;
+}
+
+.welcome-msg {
+  font-family: Mitr, Limelight, cursive;
+  position: fixed;
+  text-align: center;
+  /* padding-top: 0.4rem; */
+  padding-top: 2rem;
+  width: 100%;
+  pointer-events: none;
+  text-transform: capitalize;
+}
